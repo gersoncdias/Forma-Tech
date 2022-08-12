@@ -3,18 +3,18 @@
 
 Feature: Fluxo de usuários do Demoblaze
 
-Cenário: Ralizar acesso
+Cenário: Realizar acesso
     Dado acesso o site "https://demoblaze.com/index.html"
     Quando o usuário clica no botão da barra de navegação "Inscrever-se"
     Então deve abrir um formulário de cadástro
 
-Cenário: Ralizar cadastro
+Cenário: Realizar cadastro
     Dado que digito o nome de usuário e a senha
     Quando o usuário clica no botão "Inscrever-se",
     Então o formulário é preenchido e enviado
     E uma mensagem de alerta é exibida com o texto "Cadastro bem sucedido"
 
-Cenário: O usuário deve ser capaz de fazer login com usuário válido
+Cenário: O usuário deve ser capaz de fazer login com usuário e senha válido
     Quando o usuário clica no botão da barra de navegação "Conecte-se"
     Então deve preenche o formulário, com Nome de usuário e senha validos 
     E clicar no botao "Conecte-se"
@@ -23,7 +23,7 @@ Cenário: O usuário deve ser capaz de fazer login com usuário válido
 Cenário: Confirmar se o usuário que acessou é o mesmo que esta logado
     Dado que o usuário tem acesso ao sistema
     Quando os dados são informados
-    Então o nome do usuário correto é exibido
+    Então o nome do usuário correto é exibido na barra de navegação
 
 Cenário: Como um usuário inválido, devo visualizar uma mensagem de erro e continuar na página de Login
     Dado que estou na tela de Login
@@ -34,7 +34,7 @@ Cenário: Como um usuário inválido, devo visualizar uma mensagem de erro e con
 
     Cenário: quando não preencho o campo de login ou senha, devo visualizar uma mensagem de erro e continuar na página de Login
     Dado que estou na tela de Login
-    Quando deixar de digitar uma credencil inválida
+    Quando deixar de digitar uma credencial inválida
     E clicar no botão login
     Então devo ver uma mensagem de erro "Por favor, preencha o nome de usuário e senha."
     E devo estar na tela de Login
@@ -42,7 +42,7 @@ Cenário: Como um usuário inválido, devo visualizar uma mensagem de erro e con
 Cenário: o usuário deve poder adicionar item ao carrinho
     Quando aplico o filtro aos itens por categorias 
     Então seleciono o item desejado,e em seguida sou direcionado para uma pagina com as informações
-de preço e a escrição do produto 
+de preço e a descrição do produto 
     Quando clico no botão "adicionar ao carrinho" uma mensagem de alerta é exibida com o texto "Produto adicionado"
 
 Cenário: o usuário deve poder adicionar outros itens ao carrinho
