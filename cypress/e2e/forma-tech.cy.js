@@ -74,7 +74,7 @@ describe("Teste aplicativo demoblaze ", () => {
       cy.contains("Place Order").click();
       cy.get("#name").type("Matheus");
       cy.get("#country").type("Brasil");
-      cy.get("#city").type("Rio de Janeiro");
+      cy.get("#city").type("Maranhão");
       cy.get("#card").type("12345678901234567891");
       cy.get("#month").type("01");
       cy.get("#year").type("2025");
