@@ -1,19 +1,19 @@
-# **Forma-Tech
-# **Demoblaze.com test automation**
-A cypress test automation project for demoblaze.com
+#  **Forma-Tech
+# **Automação de teste Demoblaze.com** 
+Um projeto de automação de teste de cipreste para demoblaze.com
 
-## **Requirements**
-- Node version 14 or above
-    - MacOS: brew install node
+## **Requisitos** 
+- Node versão 14 ou superior
+    - MacOS: nó de instalação do brew
     - Ubuntu: sudo apt install nodejs
-- Chrome version 87 or above
+- Chrome versão 87 ou superior
 
-## **Set Up**
-1. Clone the project in your machine
-2. Go to the project directory 
-3. In the project directory run "npm install" in your terminal to install the dependencies needed
-4. You can have a look at the tests inside cypress/integration/ folder
+## **Configuração** 
+1. Clone o projeto em sua máquina
+2. Vá para o diretório do projeto
+3. No diretório do projeto, execute "npm install" em seu terminal para instalar as dependências necessárias
+4. Você pode dar uma olhada nos testes dentro da pasta cypress/integration/
 
-## **Run the tests**
-1. In the terminal run "npx cypress open" to open up cypress UI (it might take some time if it is the first time)
-2. Once in the Cypress menu you can select any of the .spec.js files to run their test suites.
+## **Execute os testes** 
+1. No terminal, execute "npx cypress open" para abrir a interface do usuário do cypress (pode levar algum tempo se for a primeira vez)
+2. Uma vez no menu Cypress, você pode selecionar qualquer um dos arquivos .spec.js para executar seus conjuntos de teste.
