@@ -38,7 +38,7 @@ describe("Teste aplicativo demoblaze ", () => {
         .contains("Log in")
         .click();
       cy.get("#nameofuser").should("have.text", "Welcome admin");
-      cy.contains("Nokia lumia 1520").click();
+      cy.contains("Iphone 6 32gb").click();
       cy.contains("Add to cart").click();
       cy.go("back");
       cy.go("back");
@@ -72,7 +72,7 @@ describe("Teste aplicativo demoblaze ", () => {
       cy.get("#tbodyid > tr:nth-child(1) > td:nth-child(4) > a").click();
       cy.wait(3000);
       cy.contains("Place Order").click();
-      cy.get("#name").type("Matheus");
+      cy.get("#name").type("Admin");
       cy.get("#country").type("Brasil");
       cy.get("#city").type("Maranhão");
       cy.get("#card").type("12345678901234567891");
