@@ -25,19 +25,19 @@ Cenário: Confirmar se o usuário que acessou é o mesmo que esta logado
     Quando os dados são informados
     Então o nome do usuário correto é exibido na barra de navegação
 
-Cenário: Como um usuário inválido, devo visualizar uma mensagem de erro e continuar na página de Login
+Cenário: Com o campo de  usuário não preechido, devo visualizar uma mensagem de erro
     Dado que estou na tela de Login
-    Quando digitar credenciais inválidas
-    E clicar no botão login
-    Então devo ver uma mensagem de erro "Usuário não existe"
-    E devo estar na tela de Login
-
-    Cenário: quando não preencho o campo de login ou senha, devo visualizar uma mensagem de erro e continuar na página de Login
-    Dado que estou na tela de Login
-    Quando deixar de digitar uma credencial inválida
+    E não preencho o campo de usuário
     E clicar no botão login
     Então devo ver uma mensagem de erro "Por favor, preencha o nome de usuário e senha."
-    E devo estar na tela de Login
+
+Cenário: Com o campo de  senha não preechido, devo visualizar uma mensagem de erro
+    Dado que estou na tela de Login
+    E não preencho o campo de senha
+    E clicar no botão login
+    Então devo ver uma mensagem de erro "Por favor, preencha o nome de usuário e senha."
+
+    
 
 Cenário: o usuário deve poder adicionar item ao carrinho
     Quando aplico o filtro aos itens por categorias 
